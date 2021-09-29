@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="75.0" layoutY="44.0" title="Weekly Report">
+        <xAxis>
+          <CategoryAxis fx:id="dateAxis" label="Date" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="caloriesAxis" label="Calories" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TreeTableView layoutX="75.0" layoutY="444.0" prefHeight="400.0" prefWidth="500.0">
+        <columns>
+          <TreeTableColumn prefWidth="179.0" text="Date" />
+          <TreeTableColumn prefWidth="141.0" text="Calories" />
+            <TreeTableColumn prefWidth="179.0" text="Goal" />
+        </columns>
+      </TreeTableView>
+      <TextArea layoutX="75.0" layoutY="844.0" prefHeight="127.0" prefWidth="500.0" text="You did it!">
+         <font>
+            <Font name="Calibri Bold Italic" size="72.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
